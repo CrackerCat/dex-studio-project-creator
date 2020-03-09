@@ -1,3 +1,6 @@
+
+Based on https://github.com/ThisIsLibra/AndroidProjectCreator
+
 # Usage
 - Install docker
 - MUST run in father directory of apk and output-folder, (due to docker `-v` mount limitations)
