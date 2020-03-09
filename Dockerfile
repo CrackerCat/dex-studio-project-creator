@@ -13,4 +13,4 @@ RUN ln -s AndroidProjectCreator-1.3-stable-jar-with-dependencies.jar AndroidProj
 RUN LANG=en_US.UTF-8 $JAVABIN -jar AndroidProjectCreator.jar -install
 
 # make sure that /app.apk and /project are mounted when `docker run` 
-CMD ["$JAVABIN", "-jar", "AndroidProjectCreator.jar", "-decompile", "FERNFLOWER", "/app.apk", "/project"]  
+CMD ${JAVABIN} -jar AndroidProjectCreator.jar -decompile FERNFLOWER /app.apk /project

@@ -14,4 +14,5 @@ PROJECT=$2
 [ ! -f $APK ]     && Usage 2
 [ ! -d $PROJECT ] && Usage 3 
 
+docker pull $DOCKER_TAG
 docker run -v $PWD/$APK:/app.apk -v $PWD/$PROJECT:/project $DOCKER_TAG 
